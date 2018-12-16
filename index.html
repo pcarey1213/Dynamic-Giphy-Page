@@ -3,24 +3,44 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Nutcracker Buttons</title>
+  <title>Nutcracker Buttons & Gifs!</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./assets/javascript/giph.js"></script>
-</head>
-
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css">
+  <link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=Charm">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
 <body>
+  <div class="container-fluid">
+  <section class="text-center m-2 p-2 rounded bg-light">
+    <h1 class="display-4 text-warning">Nutcracker Gifs!</h1>
+  </section>
 
-    <form>
-    <span id="topic-item">Topic: <input id="topic" type="text" ><input id="add-topic" value="Add Topic" type="submit"></span>
-    </form>
+    <div class="row">
 
-    <div id="topics">
+      <div class="col-3">
+        
+        <div class="row bg-success border border-secondary m-2 p-2 rounded">
+          <h2 class="text-white">Enter a Topic</h2>
+        <form>
+          <span class="text-white" id="topic-item">Topic: <input class="rounded" id="topic" type="text" ><input class="btn btn-danger m-2 btn-block" id="add-topic" value="Add Topic" type="submit"></span>
+        </form>
 
+      </div>
+
+        <div class="row bg-light text-white border border-danger m-2 p-2 rounded" id="topics">
+            <h2 class="text-success w-100">Buttons</h2>
+        </div>
+      </div>
+
+      <div class="col-9">
+        <div class="media bg-danger text-white d-flex flex-wrap border border-success m-2 p-2 rounded" id="gifs-appear-here">
+            <h2 class="text-white w-100">Gifs</h2>
+        </div>
+      </div>
     </div>
-    
-    <div id="gifs-appear-here">
-    </div>
- 
+
+  </div>
 
 </body>
 
