@@ -1,7 +1,4 @@
 # Dynamic-Giphy-Page
-A page populated with topic buttons to create dynamic giphy content.
-
-Deployed:  https://pcarey1213.github.io/Dynamic-Giphy-Page/s
 
 ### Overview
 
