@@ -6,11 +6,11 @@ var buttonKind = ["success", "danger", "light"];
 
 for (i=0; i < topics.length; i++){
 
-var topicButton = $("<button type='button' class='btn btn-"+buttonKind[Math.floor(Math.random() * buttonKind.length)]+" btn-sm m-1'>")
+var topicButton = $("<button type='button' class='btn btn-"+buttonKind[Math.floor(Math.random() * buttonKind.length)]+" btn-sm m-1'>");
 
 topicButton.text(topics[i]);
 
-topicButton.attr("data-topic", topics[i])
+topicButton.attr("data-topic", topics[i]);
 
 $("#topics").append(topicButton);
 
@@ -43,9 +43,11 @@ $("#add-topic").on("click", function addTopic (event) {
 
 
 $(document).on("click", "button", function fireGifs() {
-    var topic = $(this).attr("data-topic");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      topic + "&api_key=JXQseS827pcEhE9svs961KkEbk4YDS0r";
+
+  var topic = $(this).attr("data-topic");
+
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+    topic + "&api_key=JXQseS827pcEhE9svs961KkEbk4YDS0r";
 
     $.ajax({
       url: queryURL,
